@@ -1,30 +1,30 @@
 export const translations = {
-  "en-us": {
+  en: {
     home: "Laura Gillet",
   },
-  "fr-fr": {
+  fr: {
     home: "Laura Gillet",
   },
 } as const;
 
 export const languageMetadata = {
-  "en-us": {
-    code: "en-us",
+  en: {
+    code: "en",
     name: "English",
-    url: "/en-us/",
+    url: "/en/",
   },
-  "fr-fr": {
-    code: "fr-fr",
+  fr: {
+    code: "fr",
     name: "Français",
-    url: "/fr-fr/",
+    url: "/fr/",
   },
 } as const;
 
 // Explicit array of supported language codes
-export const languages = ["en-us", "fr-fr"];
+export const languages = ["en", "fr"];
 
 // Default language
-export const defaultLanguage = "en-us" as const;
+export const defaultLanguage = "en" as const;
 
 export function getTranslation(lang: string) {
   return (

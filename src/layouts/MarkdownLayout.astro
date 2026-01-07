@@ -1,9 +1,10 @@
 ---
 import Layout from "./Layout.astro";
 import Navbar from "@/components/Navbar.astro";
+import { defaultLanguage } from "@/i18n/translations";
 
 const { frontmatter } = Astro.props;
-const lang = frontmatter.lang || "en-us";
+const lang = frontmatter.lang || defaultLanguage;
 ---
 
 <Layout title={frontmatter.title} lang={lang}>

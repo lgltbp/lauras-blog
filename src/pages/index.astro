@@ -1,12 +1,12 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import { languageMetadata, translations } from "@/i18n/translations";
+import { languageMetadata, translations, defaultLanguage } from "@/i18n/translations";
 ---
 
 <Layout>
   <div class="flex min-h-screen items-center justify-center">
     <div class="flex flex-col gap-4 items-center">
-      <h1 class="text-6xl">{translations["en-us"].home}</h1>
+      <h1 class="text-6xl">{translations[defaultLanguage].home}</h1>
       <div class="flex flex-row gap-2">
       {
         Object.values(languageMetadata).map((lang) => (

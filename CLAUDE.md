@@ -17,30 +17,35 @@ Pages:
 Simple, file-based internationalization without external libraries:
 
 **Translations:**
+
 - Single source of truth: `./src/i18n/translations.ts`
 - Contains `languages` array, `languageMetadata` object, and `translations` dictionary
 - Access translations using `getTranslation(lang)` helper function
 - Configured in `astro.config.mjs` using `i18n.locales` and `i18n.defaultLocale`
 
 **Content organization:**
-- Content separated by language in subdirectories: `./src/content/posts/en-us/`, `./src/content/posts/fr-fr/`
+
+- Content separated by language in subdirectories: `./src/content/posts/en/`, `./src/content/posts/fr/`
 - Language inferred from directory structure, not frontmatter
-- Post IDs include language prefix: `"en-us/hello-world.md"`
+- Post IDs include language prefix: `"en/hello-world.md"`
 - Filter content by language: `posts.filter(post => post.id.startsWith(`${lang}/`))`
 
 **Pages and components:**
+
 - Pages receive `lang` as prop via `getStaticPaths()` params
 - Astro components receive `lang` as prop from parent pages
 - Pass `lang` to Layout component for HTML `lang` attribute
 - Use `getTranslation(lang)` to access localized strings
 
 **URL structure:**
+
 - Root `/` shows language selection page
-- Language-specific pages: `/{lang}/` (e.g., `/en-us/`, `/fr-fr/`)
-- Post pages: `/{lang}/{slug}` (e.g., `/en-us/hello-world`)
+- Language-specific pages: `/{lang}/` (e.g., `/en/`, `/fr/`)
+- Post pages: `/{lang}/{slug}` (e.g., `/en/hello-world`)
 - Language always explicit in URLs, no automatic detection
 
 **Key patterns:**
+
 - Extract language from post ID: `const [lang, ...slugParts] = post.id.split("/")`
 - Format dates with locale: `date.toLocaleDateString(lang)`
 - Generate routes for all languages in `getStaticPaths()` using `languages` array
@@ -64,8 +69,8 @@ Simple, file-based internationalization without external libraries:
 
 ## Content Files locations
 
-- Document metadata (no content) `./src/content/documents/en-us/document-name.md`
-- Chapters metadata and content `./src/content/chapters/en-us/document-name/chapter-name.md`
+- Document metadata (no content) `./src/content/documents/en/document-name.md`
+- Chapters metadata and content `./src/content/chapters/en/document-name/chapter-name.md`
 - Images (linked using `@/assets...`) `./src/assets/content/document-name/image-name.png`
 - Languages list (unique source of truth) `./src/i18n/translations.ts`
 
