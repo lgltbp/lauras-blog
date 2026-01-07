@@ -1,0 +1,51 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Navbar from "@/components/Navbar.astro";
+import PageLayout from "@/components/PageLayout.astro";
+import { getTranslation, languages } from "@/i18n/translations";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection("posts");
+
+  return languages.map((lang) => {
+    const posts = allPosts
+      .filter((post) => post.id.startsWith(`${lang}/`))
+      .filter((post) => !post.data.draft)
+      .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+    return {
+      params: { lang },
+      props: { posts, lang },
+    };
+  });
+}
+
+const { posts, lang } = Astro.props;
+const t = getTranslation(lang);
+---
+
+<Layout title={t.blog} lang={lang}>
+  <Navbar lang={lang} />
+  <PageLayout title={t.blog}>
+    <div class="flex flex-col gap-4">
+      {
+        posts.map((post) => {
+          const slug = post.id
+            .split("/")
+            .slice(1)
+            .join("/")
+            .replace(/\.md$/, "");
+          return (
+            <a
+              href={`/${lang}/blog/${slug}`}
+              class="bg-secondary rounded-2xl p-6 no-underline shadow-md hover:shadow-lg transition-shadow"
+            >
+              <div class="text-3xl font-serif">{post.data.title}</div>
+            </a>
+          );
+        })
+      }
+    </div>
+  </PageLayout>
+</Layout>

@@ -16,28 +16,38 @@ const currentLangMeta = languageMetadata[lang as keyof typeof languageMetadata];
 ---
 
 <nav class="flex justify-between items-center mb-4">
-  <a href={`/${lang}/`} class="hover:opacity-70">
-    <h1 class="text-xl">{t.home}</h1>
+  <a href={`/${lang}/`} class="hover:opacity-70 text-xl font-serif">
+    {t.home}
   </a>
-  <div class="dropdown dropdown-end">
-    <label tabindex="0" class="btn btn-sm btn-ghost">
-      {currentLangMeta.name}
-    </label>
-    <ul
-      tabindex="0"
-      class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
-    >
-      {
-        languages.map((langCode) => {
-          const metadata =
-            languageMetadata[langCode as keyof typeof languageMetadata];
-          return (
-            <li>
-              <a href={metadata.url}>{metadata.name}</a>
-            </li>
-          );
-        })
-      }
-    </ul>
+  <div class="flex items-center gap-2">
+    <div class="flex gap-1">
+      <a href={`/${lang}/about`} class="btn btn-sm btn-ghost">{t.about}</a>
+      <a href={`/${lang}/contact`} class="btn btn-sm btn-ghost">{t.contact}</a>
+      <a href={`/${lang}/blog`} class="btn btn-sm btn-ghost">{t.blog}</a>
+      <a href={`/${lang}/publications`} class="btn btn-sm btn-ghost"
+        >{t.publications}</a
+      >
+    </div>
+    <div class="dropdown dropdown-end">
+      <label tabindex="0" class="btn btn-sm btn-ghost">
+        {currentLangMeta.name}
+      </label>
+      <ul
+        tabindex="0"
+        class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+      >
+        {
+          languages.map((langCode) => {
+            const metadata =
+              languageMetadata[langCode as keyof typeof languageMetadata];
+            return (
+              <li>
+                <a href={metadata.url}>{metadata.name}</a>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </div>
   </div>
 </nav>

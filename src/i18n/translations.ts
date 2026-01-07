@@ -1,9 +1,19 @@
 export const translations = {
   en: {
     home: "Laura Gillet",
+    welcome: "Welcome!",
+    about: "About",
+    contact: "Contact",
+    blog: "Blog",
+    publications: "Publications",
   },
   fr: {
     home: "Laura Gillet",
+    welcome: "Bienvenue !",
+    about: "À propos",
+    contact: "Contact",
+    blog: "Blog",
+    publications: "Publications",
   },
 } as const;
 
