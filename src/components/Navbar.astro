@@ -9,24 +9,44 @@ import { mdiTranslate } from "@mdi/js";
 
 interface Props {
   lang: string;
-  currentPath?: string;
 }
 
 const { lang } = Astro.props;
 const t = getTranslation(lang);
+
+const currentPath = Astro.url.pathname;
+
+const navItems = [
+  { href: `/${lang}/publications`, label: t.publications },
+  { href: `/${lang}/about`, label: t.about },
+  { href: `/${lang}/contact`, label: t.contact },
+];
+
+const isHomeActive = currentPath === `/${lang}/` || currentPath === `/${lang}`;
 ---
 
 <nav class="flex justify-between items-center mb-4">
-  <a href={`/${lang}/`} class="hover:opacity-70 text-xl font-serif">
+  <a
+    href={`/${lang}/`}
+    class={`hover:opacity-70 text-xl font-serif ${isHomeActive ? "border-b-4 border-accent" : ""}`}
+  >
     {t.home}
   </a>
   <div class="flex items-center gap-2">
     <div class="flex gap-1">
-      <a href={`/${lang}/publications`} class="btn btn-sm btn-primary"
-        >{t.publications}</a
-      >
-      <a href={`/${lang}/about`} class="btn btn-sm btn-ghost">{t.about}</a>
-      <a href={`/${lang}/contact`} class="btn btn-sm btn-ghost">{t.contact}</a>
+      {
+        navItems.map((item) => {
+          const isActive = currentPath === item.href;
+          return (
+            <a
+              href={item.href}
+              class={`btn btn-sm btn-ghost ${isActive ? "border-b-4 border-accent rounded-b-none" : ""}`}
+            >
+              {item.label}
+            </a>
+          );
+        })
+      }
     </div>
     <div class="dropdown dropdown-end">
       <label tabindex="0" class="btn btn-xs btn-circle btn-ghost">
