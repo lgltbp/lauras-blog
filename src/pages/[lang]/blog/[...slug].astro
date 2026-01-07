@@ -25,9 +25,7 @@ const { Content } = await render(post);
 
 <Layout title={post.data.title} lang={lang}>
   <Navbar lang={lang} />
-  <article
-    class="prose prose-sm max-w-none bg-base-100 rounded-2xl p-8 shadow-md"
-  >
+  <article class="prose max-w-none bg-base-100 rounded-2xl p-8 shadow-md">
     <header class="mb-6">
       <h1 class="text-3xl mb-2">{post.data.title}</h1>
       <div class="text-sm opacity-50">
