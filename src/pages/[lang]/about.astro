@@ -21,7 +21,7 @@ const resumeMap = {
   fr: FrResume,
 };
 
-const Resume = resumeMap[lang];
+const Resume = resumeMap[lang as keyof typeof resumeMap];
 ---
 
 <Layout title={t.about} lang={lang}>
