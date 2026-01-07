@@ -2,7 +2,14 @@
 import Layout from "@/layouts/Layout.astro";
 import Navbar from "@/components/Navbar.astro";
 import PageLayout from "@/components/PageLayout.astro";
+import Icon from "@/components/Icon.astro";
 import { getTranslation, languages } from "@/i18n/translations";
+import { mdiLinkedin } from "@mdi/js";
+import {
+  researchGateIcon,
+  orcidIcon,
+  googleScholarIcon,
+} from "@/icons/custom-icons";
 
 export function getStaticPaths() {
   return languages.map((lang) => ({
@@ -17,5 +24,44 @@ const t = getTranslation(lang);
 
 <Layout title={t.contact} lang={lang}>
   <Navbar lang={lang} />
-  <PageLayout title={t.contact} />
+  <PageLayout title={t.contact}>
+    <div class="not-prose flex gap-4 items-center mt-8">
+      <a
+        href="https://www.linkedin.com/in/laura-gillet-9812b7a9/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-primary"
+      >
+        <Icon path={mdiLinkedin} size={20} />
+        LinkedIn
+      </a>
+      <a
+        href="https://www.researchgate.net/profile/Laura-Gillet-3?ev=hdr_xprf"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-secondary"
+      >
+        <Icon {...researchGateIcon} size={20} />
+        ResearchGate
+      </a>
+      <a
+        href="https://orcid.org/0009-0000-2914-4620"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-secondary"
+      >
+        <Icon {...orcidIcon} size={20} />
+        ORCID
+      </a>
+      <a
+        href="https://scholar.google.com/citations?hl=en&user=wAduFK4AAAAJ"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-secondary"
+      >
+        <Icon {...googleScholarIcon} size={20} />
+        Google Scholar
+      </a>
+    </div>
+  </PageLayout>
 </Layout>
