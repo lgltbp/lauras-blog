@@ -21,6 +21,31 @@
   h5,
   h6 {
     font-family: var(--font-serif);
+    font-weight: 400 !important;
+  }
+
+  h1 {
+    font-size: 2.5rem !important;
+  }
+
+  h2 {
+    font-size: 2rem !important;
+  }
+
+  h3 {
+    font-size: 1.75rem !important;
+  }
+
+  h4 {
+    font-size: 1.5rem !important;
+  }
+
+  h5 {
+    font-size: 1.25rem !important;
+  }
+
+  h6 {
+    font-size: 1.125rem !important;
   }
 
   .prose a {
@@ -28,8 +53,16 @@
     color: var(--color-primary) !important;
   }
 
-  .prose ul {
-    list-style-type: none !important;
+  .prose h2 {
+    color: var(--color-primary) !important;
+  }
+
+  .prose h3 {
+    color: #d9ab6d !important;
+  }
+
+  .prose h4 {
+    color: #ec786b !important;
   }
 }
 
