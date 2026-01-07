@@ -17,5 +17,9 @@ const t = getTranslation(lang);
 
 <Layout title={t.welcome} lang={lang}>
   <Navbar lang={lang} />
-  <PageLayout title={t.welcome} />
+  <PageLayout title={t.welcome}>
+    <p class="mb-4">{t.homeIntro}</p>
+    <p class="mb-4">{t.homeResearch}</p>
+    <p class="mb-4">{t.homeWork}</p>
+  </PageLayout>
 </Layout>
