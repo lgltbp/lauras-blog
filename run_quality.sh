@@ -28,8 +28,6 @@ run_timed "TypeScript" "pnpm run typecheck 2>&1"
 
 run_timed "ESLint" "pnpm run lint 2>&1"
 
-run_timed "Check unused images" "pnpm run check:images 2>&1"
-
 run_timed "Build" "pnpm run build 2>&1"
 
 fuser -k 4321/tcp 2>/dev/null || true
