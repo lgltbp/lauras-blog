@@ -1,7 +1,6 @@
 ---
-title: "Bonjour le monde !"
-description: "Bienvenue sur le blog de Laura"
-date: 2025-01-08
+title: "Bientôt disponible"
+date: 2026-01-01
 ---
 
-🐶 Bonjour le monde !
+Il n'y a pas encore de contenu, mais c'est pour bientôt.

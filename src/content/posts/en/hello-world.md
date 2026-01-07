@@ -1,7 +1,6 @@
 ---
-title: "Hello world!"
-description: "Welcome to Laura's blog"
-date: 2025-01-08
+title: "Coming soon"
+date: 2026-01-01
 ---
 
-🐶 Hello world!
+There is no content yet, but it's coming soon.

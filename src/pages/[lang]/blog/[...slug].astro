@@ -30,11 +30,6 @@ const { Content } = await render(post);
   >
     <header class="mb-6">
       <h1 class="text-3xl mb-2">{post.data.title}</h1>
-      {
-        post.data.description && (
-          <p class="text-lg opacity-70 mb-2">{post.data.description}</p>
-        )
-      }
       <div class="text-sm opacity-50">
         {post.data.date.toLocaleDateString(lang)}
       </div>
