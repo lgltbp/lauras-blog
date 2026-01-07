@@ -2,7 +2,17 @@
 
 ## About
 
-This is a portfolio static website built with astro.
+This is a portfolio static website.
+
+Pages:
+
+- Landing
+- Contact
+- About
+- Blog posts
+- Scientific publications list
+
+## I18n
 
 ## Tech stack
 
@@ -20,10 +30,6 @@ This is a portfolio static website built with astro.
 - Use bulleted lists `-` for list of information or succession of short sentences, do NOT use paragraphs or numbered lists `1.`
 - Always refer to sections using the format `(§5.1)`
 - Use `*` for italics and bold instead of `_`
-
-## Glossary
-
-- Dessintey: company name
 
 ## Content Files locations
 
