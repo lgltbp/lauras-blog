@@ -42,43 +42,41 @@ const t = getTranslation(lang);
     <div class="flex flex-col gap-6">
       {
         publications.map((pub) => (
-          <div class="card bg-neutral shadow-lg">
-            <div class="card-body">
-              <div class="flex flex-wrap gap-4 mb-4">
-                <div class="flex-shrink-0 w-32 aspect-square">
-                  <Image
-                    src={pub.data.coverImage}
-                    alt=""
-                    width={128}
-                    height={128}
-                    class="w-full h-full rounded-lg object-cover"
-                  />
-                </div>
-                <div class="flex-1 min-w-48">
-                  <div class="text-xl font-serif mb-3">{pub.data.title}</div>
-                  <a
-                    href={pub.data.articleUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn btn-primary mb-4"
-                  >
-                    {t.readArticle}
-                  </a>
-                </div>
+          <div class="bg-neutral shadow-lg p-3 rounded-2xl">
+            <div class="flex flex-wrap gap-4 mb-4">
+              <div class="flex-shrink-0 w-32 aspect-square">
+                <Image
+                  src={pub.data.coverImage}
+                  alt=""
+                  width={128}
+                  height={128}
+                  class="w-full h-full rounded-2xl object-cover"
+                />
               </div>
-              <div class="prose max-w-none mb-4 bg-base-100/30 p-3 rounded-lg">
-                <pub.Content />
-              </div>
-              <div class="relative bg-base-100/30 p-3 rounded-lg">
-                <p class="font-mono text-xs">{pub.data.citation}</p>
-                <button
-                  class="btn btn-circle btn-sm btn-accent absolute -bottom-3 -right-3"
-                  data-citation={pub.data.citation}
-                  onclick="navigator.clipboard.writeText(this.dataset.citation)"
+              <div class="flex-1 min-w-48">
+                <div class="text-xl font-serif mb-3">{pub.data.title}</div>
+                <a
+                  href={pub.data.articleUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary mb-4"
                 >
-                  <Icon path={mdiContentCopy} size={16} />
-                </button>
+                  {t.readArticle}
+                </a>
               </div>
+            </div>
+            <div class="prose max-w-none mb-4 bg-base-100/30 p-3 rounded-2xl">
+              <pub.Content />
+            </div>
+            <div class="relative bg-base-100/30 p-3 rounded-2xl">
+              <p class="font-mono text-xs">{pub.data.citation}</p>
+              <button
+                class="btn btn-circle btn-sm btn-accent absolute -bottom-1 -right-1"
+                data-citation={pub.data.citation}
+                onclick="navigator.clipboard.writeText(this.dataset.citation)"
+              >
+                <Icon path={mdiContentCopy} size={16} />
+              </button>
             </div>
           </div>
         ))
