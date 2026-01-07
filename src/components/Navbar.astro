@@ -25,14 +25,14 @@ const navItems = [
 const isHomeActive = currentPath === `/${lang}/` || currentPath === `/${lang}`;
 ---
 
-<nav class="flex justify-between items-center mb-4">
+<nav class="flex flex-wrap justify-between items-center gap-2 mb-4">
   <a
     href={`/${lang}/`}
-    class={`hover:opacity-70 text-xl font-serif ${isHomeActive ? "border-b-4 border-accent" : ""}`}
+    class={`hover:opacity-70 text-lg font-serif ${isHomeActive ? "border-b-4 border-accent" : ""}`}
   >
     {t.home}
   </a>
-  <div class="flex items-center gap-2">
+  <div class="flex items-center gap-1">
     <div class="flex gap-1">
       {
         navItems.map((item) => {
