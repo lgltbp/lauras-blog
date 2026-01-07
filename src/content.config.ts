@@ -5,12 +5,23 @@ const posts = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/posts" }),
   schema: z.object({
     title: z.string(),
-    description: z.string().optional(),
     date: z.date(),
     draft: z.boolean().default(false),
   }),
 });
 
+const publications = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/publications" }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      coverImage: image(),
+      citation: z.string(),
+      articleUrl: z.string().url(),
+    }),
+});
+
 export const collections = {
   posts,
+  publications,
 };
