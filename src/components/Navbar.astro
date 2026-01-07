@@ -16,8 +16,8 @@ const currentLangMeta = languageMetadata[lang as keyof typeof languageMetadata];
 ---
 
 <nav class="flex justify-between items-center mb-4">
-  <a href={`/${lang}/`} class="text-xl font-bold hover:opacity-70">
-    {t.home}
+  <a href={`/${lang}/`} class="hover:opacity-70">
+    <h1 class="text-xl">{t.home}</h1>
   </a>
   <div class="dropdown dropdown-end">
     <label tabindex="0" class="btn btn-sm btn-ghost">

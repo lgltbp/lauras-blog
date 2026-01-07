@@ -1,9 +1,9 @@
 export const translations = {
   "en-us": {
-    home: "Laura's Blog",
+    home: "Laura Gillet",
   },
   "fr-fr": {
-    home: "Le blog de Laura",
+    home: "Laura Gillet",
   },
 } as const;
 

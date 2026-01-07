@@ -1,5 +1,29 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
+
+@theme {
+  --font-sans: "Raleway", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Libre Bodoni", ui-serif, Georgia, serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-serif);
+  }
+}
+
 /* THEME */
 
 @plugin "daisyui" {
@@ -9,24 +33,30 @@
 @plugin "daisyui/theme" {
   name: "light";
   default: true;
-  /* white text on brand cyan */
-  --color-primary: #00c1de;
+  /* Teal - Primary accent */
+  --color-primary: #49989f;
   --color-primary-content: #ffffff;
-  /* white text on brand navy */
-  --color-neutral: #002856;
+  /* Sage green - Secondary/decorative */
+  --color-secondary: #95baa9;
+  --color-secondary-content: #2d3d38;
+  /* Gold - Accent/highlights */
+  --color-accent: #d9ab6d;
+  --color-accent-content: #2d3d38;
+  /* Dark green - Neutral elements */
+  --color-neutral: #2d3d38;
   --color-neutral-content: #ffffff;
-  /* brand slate */
-  --color-base-content: var(--color-neutral);
-  --color-base-100: "white";
-  --color-base-200: color-mix(in srgb, var(--color-neutral) 3%, transparent);
-  --color-base-300: color-mix(in srgb, var(--color-neutral) 6%, transparent);
-  /* colors from AvatarColors */
-  --color-info: #53a8cc;
+  /* Off-white and green beige backgrounds */
+  --color-base-100: #ffffff;
+  --color-base-200: color-mix(in srgb, #ffffff 50%, #efeae3 50%);
+  --color-base-300: #efeae3;
+  --color-base-content: #2d3d38;
+  /* Semantic colors */
+  --color-info: #49989f;
   --color-info-content: #ffffff;
-  --color-error: #da627d;
+  --color-success: #95baa9;
+  --color-success-content: #2d3d38;
+  --color-warning: #d9ab6d;
+  --color-warning-content: #2d3d38;
+  --color-error: #d93e1f;
   --color-error-content: #ffffff;
-  --color-success: #70c1b3;
-  --color-success-content: #ffffff;
-  --color-warning: #ffe066;
-  --color-warning-content: #000000;
 }
