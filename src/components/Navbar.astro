@@ -4,6 +4,8 @@ import {
   languageMetadata,
   languages,
 } from "@/i18n/translations";
+import Icon from "@/components/Icon.astro";
+import { mdiTranslate } from "@mdi/js";
 
 interface Props {
   lang: string;
@@ -12,7 +14,6 @@ interface Props {
 
 const { lang } = Astro.props;
 const t = getTranslation(lang);
-const currentLangMeta = languageMetadata[lang as keyof typeof languageMetadata];
 ---
 
 <nav class="flex justify-between items-center mb-4">
@@ -21,16 +22,15 @@ const currentLangMeta = languageMetadata[lang as keyof typeof languageMetadata];
   </a>
   <div class="flex items-center gap-2">
     <div class="flex gap-1">
-      <a href={`/${lang}/about`} class="btn btn-sm btn-ghost">{t.about}</a>
-      <a href={`/${lang}/contact`} class="btn btn-sm btn-ghost">{t.contact}</a>
-      <a href={`/${lang}/blog`} class="btn btn-sm btn-ghost">{t.blog}</a>
-      <a href={`/${lang}/publications`} class="btn btn-sm btn-ghost"
+      <a href={`/${lang}/publications`} class="btn btn-sm btn-primary"
         >{t.publications}</a
       >
+      <a href={`/${lang}/about`} class="btn btn-sm btn-ghost">{t.about}</a>
+      <a href={`/${lang}/contact`} class="btn btn-sm btn-ghost">{t.contact}</a>
     </div>
     <div class="dropdown dropdown-end">
-      <label tabindex="0" class="btn btn-sm btn-ghost">
-        {currentLangMeta.name}
+      <label tabindex="0" class="btn btn-xs btn-circle btn-ghost">
+        <Icon path={mdiTranslate} size={16} />
       </label>
       <ul
         tabindex="0"
