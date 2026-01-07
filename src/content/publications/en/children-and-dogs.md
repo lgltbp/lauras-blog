@@ -5,4 +5,4 @@ citation: "Gillet, L., & Kubinyi, E. (2024). Children and dogs: Exploring the im
 articleUrl: "https://ojs.elte.hu/gyermekneveles/article/view/9035"
 ---
 
-- [Etológusok. podcast #9](https://open.spotify.com/episode/00WtHWSEal07chL8e352d8) - What effect dogs have on our life?
+[Etológusok. podcast #9](https://open.spotify.com/episode/00WtHWSEal07chL8e352d8) - What effect dogs have on our life?
