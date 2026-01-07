@@ -67,13 +67,6 @@ Simple, file-based internationalization without external libraries:
 - Always refer to sections using the format `(§5.1)`
 - Use `*` for italics and bold instead of `_`
 
-## Content Files locations
-
-- Document metadata (no content) `./src/content/documents/en/document-name.md`
-- Chapters metadata and content `./src/content/chapters/en/document-name/chapter-name.md`
-- Images (linked using `@/assets...`) `./src/assets/content/document-name/image-name.png`
-- Languages list (unique source of truth) `./src/i18n/translations.ts`
-
 ## Quality
 
 Always run ./run_quality.sh after any change. It does the following:
