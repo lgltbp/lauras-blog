@@ -22,6 +22,15 @@
   h6 {
     font-family: var(--font-serif);
   }
+
+  .prose a {
+    font-weight: 700 !important;
+    color: var(--color-primary) !important;
+  }
+
+  .prose ul {
+    list-style-type: none !important;
+  }
 }
 
 /* THEME */
@@ -59,4 +68,8 @@
   --color-warning-content: #2d3d38;
   --color-error: #d93e1f;
   --color-error-content: #ffffff;
+  /* Border radius */
+  --radius-field: 8px;
+  /* Border width */
+  --border: 0;
 }
