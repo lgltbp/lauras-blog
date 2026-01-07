@@ -3,6 +3,8 @@ import Layout from "@/layouts/Layout.astro";
 import Navbar from "@/components/Navbar.astro";
 import PageLayout from "@/components/PageLayout.astro";
 import { getTranslation, languages } from "@/i18n/translations";
+import EnResume from "@/content/resume/en.md";
+import FrResume from "@/content/resume/fr.md";
 
 export function getStaticPaths() {
   return languages.map((lang) => ({
@@ -13,9 +15,20 @@ export function getStaticPaths() {
 
 const { lang } = Astro.props;
 const t = getTranslation(lang);
+
+const resumeMap = {
+  en: EnResume,
+  fr: FrResume,
+};
+
+const Resume = resumeMap[lang];
 ---
 
 <Layout title={t.about} lang={lang}>
   <Navbar lang={lang} />
-  <PageLayout title={t.about} />
+  <PageLayout title={t.about}>
+    <div class="prose max-w-none">
+      <Resume />
+    </div>
+  </PageLayout>
 </Layout>
