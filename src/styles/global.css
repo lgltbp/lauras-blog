@@ -75,15 +75,15 @@
   /* Teal - Primary accent */
   --color-primary: #49989f;
   --color-primary-content: #ffffff;
-  /* Sage green - Secondary/decorative */
-  --color-secondary: #dcdfc4;
-  --color-secondary-content: #2d3d38;
+  /* Sage green - Neutral/decorative */
+  --color-neutral: #dcdfc4;
+  --color-neutral-content: #2d3d38;
   /* Gold - Accent/highlights */
   --color-accent: #d9ab6d;
   --color-accent-content: #2d3d38;
-  /* Dark green - Neutral elements */
-  --color-neutral: #2d3d38;
-  --color-neutral-content: #ffffff;
+  /* Dark green - Secondary elements */
+  --color-secondary: #ec786b;
+  --color-secondary-content: #ffffff;
   /* Off-white and green beige backgrounds */
   --color-base-100: #ffffff;
   --color-base-200: color-mix(in srgb, #ffffff 50%, #efeae3 50%);
