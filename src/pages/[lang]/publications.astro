@@ -2,20 +2,87 @@
 import Layout from "@/layouts/Layout.astro";
 import Navbar from "@/components/Navbar.astro";
 import PageLayout from "@/components/PageLayout.astro";
+import Icon from "@/components/Icon.astro";
 import { getTranslation, languages } from "@/i18n/translations";
+import { getCollection, render } from "astro:content";
+import { Image } from "astro:assets";
+import { mdiContentCopy } from "@mdi/js";
 
-export function getStaticPaths() {
-  return languages.map((lang) => ({
-    params: { lang },
-    props: { lang },
-  }));
+export async function getStaticPaths() {
+  const allPublications = await getCollection("publications");
+
+  return Promise.all(
+    languages.map(async (lang) => {
+      const pubs = allPublications
+        .filter((pub) => pub.id.startsWith(`${lang}/`))
+        .sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+      const publications = await Promise.all(
+        pubs.map(async (pub) => ({
+          data: pub.data,
+          Content: (await render(pub)).Content,
+        })),
+      );
+
+      return {
+        params: { lang },
+        props: { publications, lang },
+      };
+    }),
+  );
 }
 
-const { lang } = Astro.props;
+const { publications, lang } = Astro.props;
 const t = getTranslation(lang);
 ---
 
 <Layout title={t.publications} lang={lang}>
   <Navbar lang={lang} />
-  <PageLayout title={t.publications} />
+  <PageLayout title={t.publications}>
+    <div class="flex flex-col gap-6">
+      {
+        publications.map((pub) => (
+          <div class="card bg-secondary shadow-lg">
+            <div class="card-body">
+              <div class="flex gap-6 mb-4">
+                <div class="flex-shrink-0 w-48 aspect-square">
+                  <Image
+                    src={pub.data.coverImage}
+                    alt=""
+                    width={192}
+                    height={192}
+                    class="w-full h-full rounded-lg object-cover"
+                  />
+                </div>
+                <div class="flex-1">
+                  <h2 class="text-2xl font-serif mb-3">{pub.data.title}</h2>
+                  <a
+                    href={pub.data.articleUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary mb-4"
+                  >
+                    {t.readArticle}
+                  </a>
+                </div>
+              </div>
+              <div class="prose prose-sm max-w-none mb-4 bg-base-100/30 p-3 rounded-lg">
+                <pub.Content />
+              </div>
+              <div class="flex items-start gap-2 bg-base-100/30 p-3 rounded-lg">
+                <p class="flex-1 font-mono text-xs">{pub.data.citation}</p>
+                <button
+                  class="btn btn-circle btn-sm btn-accent"
+                  data-citation={pub.data.citation}
+                  onclick="navigator.clipboard.writeText(this.dataset.citation)"
+                >
+                  <Icon path={mdiContentCopy} size={16} />
+                </button>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </PageLayout>
 </Layout>
