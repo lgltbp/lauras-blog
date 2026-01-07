@@ -1,6 +1,8 @@
 Bonjour !
 
-Je m'appelle Laura, je suis psychologue et doctorante en éthologie au Département d'éthologie de l'ELTE, à Budapest, en Hongrie. Mes recherches actuelles explorent la transformation des relations entre les humains et les animaux de compagnie dans la société moderne - une époque marquée par la solitude croissante, l'aliénation sociale et l'évolution des structures familiales. Par exemple, j'étudie comment les soins apportés aux chiens redéfinissent les concepts de famille et de parentalité dans les cultures occidentales. J'explore également les coûts et les bénéfices perçus de la possession d'un chien, et comment ils varient entre les cultures occidentales et non-occidentales.
+Je m'appelle Laura, je suis psychologue et doctorante en éthologie au Département d'éthologie de l'ELTE, à Budapest, en Hongrie. Mes recherches actuelles explorent la transformation des relations entre les humains et les animaux de compagnie dans la société moderne - une époque marquée par la solitude croissante, l'aliénation sociale et l'évolution des structures familiales.
+
+Par exemple, j'étudie comment les soins apportés aux chiens redéfinissent les concepts de famille et de parentalité dans les cultures occidentales. J'explore également les coûts et les bénéfices perçus de la possession d'un chien, et comment ils varient entre les cultures occidentales et non-occidentales.
 
 Avant de commencer ce programme de doctorat, j'ai étudié la psychologie pendant 6 ans et travaillé en zoothérapie pendant 2 ans. Durant toutes ces années, j'ai travaillé sur divers sujets tels que les représentations sociales, les attitudes politiques, le développement des normes sociales chez l'enfant et l'influence des émotions sur les comportements prosociaux. J'ai également suivi des cours d'introduction en anthropologie et sociologie - domaines qui me passionnent également.
 
