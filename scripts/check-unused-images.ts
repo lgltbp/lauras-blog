@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { readdir, readFile } from "fs/promises";
+import { access, readdir, readFile } from "fs/promises";
 import { join, relative } from "path";
 
 // Supported image extensions
@@ -61,6 +61,17 @@ function resolveAssetPath(assetPath: string): string {
 
 async function main() {
   console.log("🔍 Checking for unused images in ./src/assets/content/...\n");
+
+  // Check if assets directory exists
+  try {
+    await access("./src/assets/content");
+  } catch {
+    console.log(
+      "📁 No ./src/assets/content directory found - nothing to check",
+    );
+    console.log("✅ No images to check!\n");
+    process.exit(0);
+  }
 
   // Find all image files
   const imageFiles = await findFiles("./src/assets/content", IMAGE_EXTENSIONS);
