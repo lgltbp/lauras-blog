@@ -69,10 +69,10 @@ const t = getTranslation(lang);
               <div class="prose max-w-none mb-4 bg-base-100/30 p-3 rounded-lg">
                 <pub.Content />
               </div>
-              <div class="flex items-start gap-2 bg-base-100/30 p-3 rounded-lg">
-                <p class="flex-1 font-mono text-xs">{pub.data.citation}</p>
+              <div class="relative bg-base-100/30 p-3 rounded-lg">
+                <p class="font-mono text-xs">{pub.data.citation}</p>
                 <button
-                  class="btn btn-circle btn-sm btn-accent"
+                  class="btn btn-circle btn-sm btn-accent absolute -bottom-3 -right-3"
                   data-citation={pub.data.citation}
                   onclick="navigator.clipboard.writeText(this.dataset.citation)"
                 >
