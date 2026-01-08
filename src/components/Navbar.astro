@@ -28,7 +28,7 @@ const isHomeActive = currentPath === `/${lang}/` || currentPath === `/${lang}`;
 <nav class="flex flex-wrap justify-between items-center gap-2 mb-4">
   <a
     href={`/${lang}/`}
-    class={`hover:opacity-70 text-lg font-serif ${isHomeActive ? "border-b-4 border-accent" : ""}`}
+    class={`hover:opacity-70 text-xl font-serif ${isHomeActive ? "border-b-4 border-accent" : ""}`}
   >
     {t.home}
   </a>
@@ -40,7 +40,7 @@ const isHomeActive = currentPath === `/${lang}/` || currentPath === `/${lang}`;
           return (
             <a
               href={item.href}
-              class={`btn btn-sm btn-ghost ${isActive ? "!border-b-4 !border-accent rounded-b-none" : ""}`}
+              class={`btn btn-ghost ${isActive ? "!border-b-4 !border-accent rounded-b-none" : ""}`}
             >
               {item.label}
             </a>
@@ -49,7 +49,7 @@ const isHomeActive = currentPath === `/${lang}/` || currentPath === `/${lang}`;
       }
     </div>
     <div class="dropdown dropdown-end">
-      <label tabindex="0" class="btn btn-xs btn-circle btn-ghost">
+      <label tabindex="0" class="btn btn-sm btn-circle btn-ghost">
         <Icon path={mdiTranslate} size={16} />
       </label>
       <ul
