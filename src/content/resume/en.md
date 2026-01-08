@@ -8,7 +8,7 @@ Before starting this PhD program, I've studied psychology for 6 years, and worke
 
 ### Education
 
-- 2022 – now: PhD in Biology/Ethology, Eötvös Loránd University, Faculty of Science, Dept. of Ethology
+- 2022 – now: PhD in Biology, Eötvös Loránd University, Faculty of Science, Dept. of Ethology
 - 2016-2017: Professional title obtained at the end of two internships carried out during the year 2016-2017.
 - 2014-2016: MSc in Psychology, University of Nantes & University of Bordeaux, Faculty of Psychology. Speciality: Research in Psychology & Social Psychology
 - 2011-2014: BSc in Psychology, University of Rouen, Faculty of Psychology. Specialty: Social and occupational psychology.
@@ -26,7 +26,3 @@ Before starting this PhD program, I've studied psychology for 6 years, and worke
 - Pet keeping from an evolutionary perspective (MTA-ELTE Lendület "Momentum" Companion Animal Research Group, 2022–present): Costs and benefits of dog keeping; Shifting roles of dogs in Western societies & cross-cultural attitudes towards dogs
 - Feeding behaviour in domestic cats (AVA animal shelter & University of Strasbourg, 2018, volunteer work)
 - Cognitive ageing in dogs (Senior Family Dog Project, 2017-2018, volunteer work)
-
-### Research grants
-
-- 2023-2026: Doktoranduszi Kiválósági Ösztöndíj Program (DKÖP-2023)
