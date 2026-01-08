@@ -7,6 +7,7 @@ export const translations = {
     blog: "Blog",
     publications: "Publications",
     readArticle: "Read the article",
+    copyCitation: "Copy citation",
     homeIntro:
       "I'm Laura Gillet, a psychologist and PhD student in ethology at Eötvös Loránd University in Budapest. My research explores the evolving relationship between humans and dogs in modern society, particularly how dog ownership is redefining concepts of family and parenting in Western cultures.",
     homeResearch:
@@ -22,6 +23,7 @@ export const translations = {
     blog: "Blog",
     publications: "Publications",
     readArticle: "Lire l'article",
+    copyCitation: "Copier la citation",
     homeIntro:
       "Je suis Laura Gillet, psychologue et doctorante en éthologie à l'Université Eötvös Loránd de Budapest. Mes recherches explorent l'évolution de la relation entre les humains et les chiens dans la société moderne, en particulier la façon dont la possession de chiens redéfinit les concepts de famille et de parentalité dans les cultures occidentales.",
     homeResearch:
