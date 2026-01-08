@@ -1,5 +1,5 @@
 ---
-title: "Le rôle des chiens est associé aux pratiques de gestion et aux caractéristiques des propriétaires, mais pas aux problèmes de comportement canin perçus"
+title: "Le rôle des chiens est associé aux pratiques de soin et aux caractéristiques des propriétaires, mais pas aux problèmes de comportement canin perçus"
 coverImage: "../../../assets/content/publications/role-of-dogs.jpg"
 citation: "Gillet, L., Simon, B., & Kubinyi, E. (2024). The role of dogs is associated with owner management practices and characteristics, but not with perceived canine behaviour problems. Scientific Reports, 14(1), 27548. https://doi.org/10.1038/s41598-024-77400-y"
 articleUrl: "https://www.nature.com/articles/s41598-024-77400-y"

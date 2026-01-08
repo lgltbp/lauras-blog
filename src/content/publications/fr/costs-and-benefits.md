@@ -5,6 +5,9 @@ citation: "Gillet, L., Turcsán, B., & Kubinyi, E. (2025). Perceived costs and b
 articleUrl: "https://www.nature.com/articles/s41598-025-85254-1"
 ---
 
+[Science et Vie](https://www.science-et-vie.com/questions-reponses/avoir-un-chien-avantage-ou-inconvenient-cette-etude-cherche-a-connaitre-votre-avis-189609.html)- Avoir un chien : avantage ou inconvénient? Cette étude cherche à connaître votre avis  
+[Le Figaro](https://www.lefigaro.fr/animaux/posseder-un-chien-peut-etre-source-de-bonheur-comme-de-stress-20250121)- Posséder un chien peut être source de bonheur comme de stress
+
 [The Times](https://www.thetimes.com/uk/science/article/new-dog-owners-have-to-take-the-ruff-with-the-smooth-wc7hbvrbd) - It's a dog's life for owners as costs may outweigh the joys  
 [Daily Mail](https://www.dailymail.co.uk/sciencetech/article-14307773/vets-dog-burden-humans-happier.html) - Vets say owning a dog can be a BURDEN - and warn pooches may not have the power to make humans happier after all  
 [American Kennel Club](https://www.akc.org/expert-advice/puppy-information/dog-ownership-right-for-you/) - Is Dog Ownership Right for You?  
