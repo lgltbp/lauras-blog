@@ -1,5 +1,6 @@
 ---
 import "@/styles/global.css";
+import { Font } from "astro:assets";
 
 interface Props {
   title?: string;
@@ -15,12 +16,8 @@ const { title = "Laura's Blog", lang = "en" } = Astro.props;
     <meta charset="UTF-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="/favicon.svg" rel="icon" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
-      rel="stylesheet"
-    />
+    <Font cssVariable="--font-sans" preload />
+    <Font cssVariable="--font-serif" preload />
     <meta content={Astro.generator} name="generator" />
     <meta name="robots" content="noindex, nofollow" />
     <title>{title}</title>
