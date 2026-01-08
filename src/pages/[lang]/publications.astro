@@ -36,7 +36,7 @@ const { publications, lang } = Astro.props;
 const t = getTranslation(lang);
 ---
 
-<Layout title={t.publications} lang={lang}>
+<Layout title={t.publications} lang={lang} description={t.publicationsDescription}>
   <Navbar lang={lang} />
   <PageLayout title={t.publications}>
     <div class="flex flex-col gap-6">

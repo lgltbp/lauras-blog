@@ -14,6 +14,16 @@ export const translations = {
       "As part of the MTA-ELTE Lendület Momentum Companion Animal Research Group, I investigate the costs and benefits of dog keeping, examining how our canine companions influence human social networks in an era marked by increasing loneliness and changing family structures.",
     homeWork:
       "My work includes cross-cultural comparisons of dog ownership patterns and the study of dogs' child-like roles in contemporary households. Through this research, I aim to better understand the profound ways in which dogs have become integral members of our families and societies.",
+    homeDescription:
+      "Laura Gillet - Psychologist and PhD student in ethology researching the evolving relationship between humans and dogs in modern society at Eötvös Loránd University.",
+    aboutDescription:
+      "Learn about Laura Gillet's background, academic journey, and research in ethology focusing on human-dog relationships and companion animal behavior.",
+    contactDescription:
+      "Get in touch with Laura Gillet. Find links to professional profiles including LinkedIn, ResearchGate, ORCID, and Google Scholar.",
+    blogDescription:
+      "Read Laura Gillet's blog posts about dog behavior, ethology research, and insights on human-canine relationships.",
+    publicationsDescription:
+      "Browse Laura Gillet's scientific publications on dog ownership, human-dog relationships, and the role of dogs in contemporary families.",
   },
   fr: {
     home: "Laura Gillet",
@@ -30,6 +40,16 @@ export const translations = {
       "Au sein du groupe de recherche MTA-ELTE Lendület Momentum sur les animaux de compagnie, j'étudie les coûts et les bénéfices de la possession de chiens, en examinant comment nos compagnons canins influencent les réseaux sociaux humains dans une époque marquée par une solitude croissante et des structures familiales en mutation.",
     homeWork:
       "Mon travail comprend des comparaisons interculturelles des modes de possession de chiens et l'étude des rôles quasi-infantiles des chiens dans les foyers contemporains. À travers ces recherches, je vise à mieux comprendre les façons profondes dont les chiens sont devenus des membres intégraux de nos familles et de nos sociétés.",
+    homeDescription:
+      "Laura Gillet - Psychologue et doctorante en éthologie recherchant l'évolution de la relation entre les humains et les chiens dans la société moderne à l'Université Eötvös Loránd.",
+    aboutDescription:
+      "Découvrez le parcours académique et les recherches de Laura Gillet en éthologie sur les relations humain-chien et le comportement des animaux de compagnie.",
+    contactDescription:
+      "Contactez Laura Gillet. Trouvez les liens vers ses profils professionnels incluant LinkedIn, ResearchGate, ORCID et Google Scholar.",
+    blogDescription:
+      "Lisez les articles de blog de Laura Gillet sur le comportement canin, la recherche en éthologie et les relations humain-chien.",
+    publicationsDescription:
+      "Consultez les publications scientifiques de Laura Gillet sur la possession de chiens, les relations humain-chien et le rôle des chiens dans les familles contemporaines.",
   },
 } as const;
 

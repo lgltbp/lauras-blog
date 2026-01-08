@@ -23,7 +23,7 @@ const { post, lang } = Astro.props;
 const { Content } = await render(post);
 ---
 
-<Layout title={post.data.title} lang={lang}>
+<Layout title={post.data.title} lang={lang} description={post.data.description}>
   <Navbar lang={lang} />
   <article class="prose max-w-none bg-base-100 rounded-2xl p-4 shadow-md">
     <header class="mb-6">

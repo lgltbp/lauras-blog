@@ -22,7 +22,7 @@ const { lang } = Astro.props;
 const t = getTranslation(lang);
 ---
 
-<Layout title={t.contact} lang={lang}>
+<Layout title={t.contact} lang={lang} description={t.contactDescription}>
   <Navbar lang={lang} />
   <PageLayout title={t.contact}>
     <div class="not-prose flex flex-wrap gap-2 items-center mt-8">

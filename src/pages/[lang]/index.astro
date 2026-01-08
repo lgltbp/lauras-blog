@@ -15,7 +15,7 @@ const { lang } = Astro.props;
 const t = getTranslation(lang);
 ---
 
-<Layout title={t.welcome} lang={lang}>
+<Layout title={t.welcome} lang={lang} description={t.homeDescription}>
   <Navbar lang={lang} />
   <PageLayout title={t.welcome}>
     <div class="prose max-w-none">

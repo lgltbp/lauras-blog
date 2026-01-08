@@ -5,9 +5,10 @@ import { Font } from "astro:assets";
 interface Props {
   title?: string;
   lang?: string;
+  description?: string;
 }
 
-const { title = "Laura's Blog", lang = "en" } = Astro.props;
+const { title = "Laura's Blog", lang = "en", description } = Astro.props;
 ---
 
 <!doctype html>
@@ -19,6 +20,7 @@ const { title = "Laura's Blog", lang = "en" } = Astro.props;
     <Font cssVariable="--font-sans" preload />
     <Font cssVariable="--font-serif" preload />
     <meta content={Astro.generator} name="generator" />
+    {description && <meta name="description" content={description} />}
     <title>{title}</title>
   </head>
   <body class="bg-base-200 min-h-screen flex flex-col items-center">
