@@ -4,7 +4,7 @@ Je m'appelle Laura, je suis psychologue et doctorante en éthologie au Départem
 
 Par exemple, j'étudie comment les soins apportés aux chiens redéfinissent les concepts de famille et de parentalité dans les cultures occidentales. J'explore également les coûts et les bénéfices perçus de la possession d'un chien, et comment ils varient entre les cultures occidentales et non-occidentales.
 
-Avant de commencer ce programme de doctorat, j'ai étudié la psychologie pendant 6 ans et travaillé en thérapie assistée par les animaux pendant 2 ans. Durant toutes ces années, j'ai travaillé sur divers sujets tels que les représentations sociales, les attitudes politiques, le développement des normes sociales chez l'enfant et l'influence des émotions sur les comportements prosociaux. J'ai également suivi des cours d'introduction à l'anthropologie et à la sociologie - domaines qui me passionnent également.
+Avant de commencer ce programme doctoral, j'ai étudié la psychologie pendant 6 ans et j'ai travaillé en thérapie assistée par les animaux pendant 2 ans. Durant toutes ces années, j'ai exploré divers sujets d'étude tels que les représentations sociales, les attitudes politiques, le développement des normes sociales chez l'enfant ou encore l'influence des émotions sur les comportements prosociaux. J'ai aussi suivi des cours d'introduction à l'anthropologie et à la sociologie - domaines qui me passionnent tout autant.
 
 ## CV académique
 
@@ -26,5 +26,5 @@ Avant de commencer ce programme de doctorat, j'ai étudié la psychologie pendan
 #### Éthologie
 
 - La possession d'animaux de compagnie dans une perspective évolutive (MTA-ELTE Lendület "Momentum" Companion Animal Research Group, 2022–aujourd'hui) : Coûts et bénéfices de la possession d'un chien ; Évolution du rôle du chien de compagnie dans les sociétés occidentales & attitudes interculturelles envers les chiens
-- Comportement alimentaire chez le chat domestique (refuge AVA & Université de Strasbourg, 2018, travail bénévole)
-- Vieillissement cognitif chez le chien de famille (Senior Family Dog Project, 2017-2018, travail bénévole)
+- Comportement alimentaire chez le chat domestique (refuge AVA & Université de Strasbourg, 2018, stage bénévole)
+- Vieillissement cognitif chez le chien de famille (Senior Family Dog Project, 2017-2018, stage bénévole)
