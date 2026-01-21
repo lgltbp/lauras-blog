@@ -23,36 +23,38 @@ const navItems = [
 ];
 ---
 
-<nav class="flex flex-wrap items-center gap-1 mb-4 max-w-4xl w-full mx-auto">
-  {
-    navItems.map((item) => {
-      const colorClass = item.secondary ? "btn-secondary" : "";
-      return (
-        <a href={item.href} class={`btn btn-ghost ${colorClass}`}>
-          {item.label}
-        </a>
-      );
-    })
-  }
-  <div class="dropdown dropdown-end">
-    <label tabindex="0" class="btn btn-sm btn-circle btn-ghost">
-      <Icon path={mdiTranslate} size={16} />
-    </label>
-    <ul
-      tabindex="0"
-      class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
-    >
-      {
-        languages.map((langCode) => {
-          const metadata =
-            languageMetadata[langCode as keyof typeof languageMetadata];
-          return (
-            <li>
-              <a href={metadata.url}>{metadata.name}</a>
-            </li>
-          );
-        })
-      }
-    </ul>
+<nav class="sticky top-0 z-50 w-full bg-base-200">
+  <div class="flex flex-wrap items-center gap-1 max-w-4xl w-full mx-auto">
+    {
+      navItems.map((item) => {
+        const colorClass = item.secondary ? "btn-secondary" : "";
+        return (
+          <a href={item.href} class={`btn btn-ghost ${colorClass}`}>
+            {item.label}
+          </a>
+        );
+      })
+    }
+    <div class="dropdown dropdown-end flex-1 flex justify-end">
+      <label tabindex="0" class="btn btn-ghost">
+        <Icon path={mdiTranslate} size={16} />
+      </label>
+      <ul
+        tabindex="0"
+        class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+      >
+        {
+          languages.map((langCode) => {
+            const metadata =
+              languageMetadata[langCode as keyof typeof languageMetadata];
+            return (
+              <li>
+                <a href={metadata.url}>{metadata.name}</a>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </div>
   </div>
 </nav>
