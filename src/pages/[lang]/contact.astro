@@ -1,7 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import Navbar from "@/components/Navbar.astro";
-import PageLayout from "@/components/PageLayout.astro";
+import ContentBanner from "@/components/ContentBanner.astro";
 import Icon from "@/components/Icon.astro";
 import { getTranslation, languages } from "@/i18n/translations";
 import { mdiLinkedin } from "@mdi/js";
@@ -24,7 +24,7 @@ const t = getTranslation(lang);
 
 <Layout title={t.contact} lang={lang} description={t.contactDescription}>
   <Navbar lang={lang} />
-  <PageLayout title={t.contact}>
+  <ContentBanner title={t.contact}>
     <div class="not-prose flex flex-wrap gap-2 items-center mt-8">
       <a
         href="https://www.linkedin.com/in/laura-gillet-9812b7a9/"
@@ -63,5 +63,5 @@ const t = getTranslation(lang);
         Google Scholar
       </a>
     </div>
-  </PageLayout>
+  </ContentBanner>
 </Layout>

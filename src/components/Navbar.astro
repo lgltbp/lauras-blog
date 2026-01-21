@@ -25,7 +25,7 @@ const navItems = [
 const isHomeActive = currentPath === `/${lang}/` || currentPath === `/${lang}`;
 ---
 
-<nav class="flex flex-wrap justify-between items-center gap-2 mb-4">
+<nav class="flex flex-wrap justify-between items-center gap-2 mb-4 max-w-4xl w-full mx-auto">
   <a
     href={`/${lang}/`}
     class={`hover:opacity-70 text-xl font-serif ${isHomeActive ? "border-b-4 border-accent" : ""}`}
