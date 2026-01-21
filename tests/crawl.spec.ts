@@ -7,7 +7,7 @@ test.describe("Site crawl", () => {
   }) => {
     const baseURL = "http://localhost:4321";
     const visited = new Set<string>();
-    const queue: string[] = ["/"];
+    const queue: string[] = ["/en/"];
     const errors: { url: string; error: string }[] = [];
     const resourcesChecked = new Set<string>();
 
