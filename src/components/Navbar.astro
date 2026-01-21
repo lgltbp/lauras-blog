@@ -14,34 +14,27 @@ interface Props {
 const { lang } = Astro.props;
 const t = getTranslation(lang);
 
-const currentPath = Astro.url.pathname;
-
 const navItems = [
+  { href: `/${lang}/participate`, label: t.participate, secondary: true },
   { href: `/${lang}/publications`, label: t.publications },
   { href: `/${lang}/about`, label: t.about },
   { href: `/${lang}/contact`, label: t.contact },
 ];
-
-const isHomeActive = currentPath === `/${lang}/` || currentPath === `/${lang}`;
 ---
 
-<nav class="flex flex-wrap justify-between items-center gap-2 mb-4 max-w-4xl w-full mx-auto">
-  <a
-    href={`/${lang}/`}
-    class={`hover:opacity-70 text-xl font-serif ${isHomeActive ? "border-b-4 border-accent" : ""}`}
-  >
+<nav
+  class="flex flex-wrap justify-between items-center gap-2 mb-4 max-w-4xl w-full mx-auto"
+>
+  <a href={`/${lang}/`} class={`hover:opacity-70 text-xl font-serif`}>
     {t.home}
   </a>
   <div class="flex items-center gap-1">
     <div class="flex gap-1">
       {
         navItems.map((item) => {
-          const isActive = currentPath === item.href;
+          const colorClass = item.secondary ? "btn-secondary" : "";
           return (
-            <a
-              href={item.href}
-              class={`btn btn-ghost ${isActive ? "!border-b-4 !border-accent rounded-b-none" : ""}`}
-            >
+            <a href={item.href} class={`btn btn-ghost ${colorClass} `}>
               {item.label}
             </a>
           );

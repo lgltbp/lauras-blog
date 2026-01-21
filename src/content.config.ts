@@ -23,7 +23,24 @@ const publications = defineCollection({
     }),
 });
 
+const participate = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/participate" }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      description: z.string(),
+      coverImage: image(),
+      buttons: z.array(
+        z.object({
+          text: z.string(),
+          url: z.string().url(),
+        }),
+      ),
+    }),
+});
+
 export const collections = {
   posts,
   publications,
+  participate,
 };
