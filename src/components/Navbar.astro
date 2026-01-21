@@ -15,52 +15,44 @@ const { lang } = Astro.props;
 const t = getTranslation(lang);
 
 const navItems = [
-  { href: `/${lang}/participate`, label: t.participate, secondary: true },
+  { href: `/${lang}/`, label: t.home },
   { href: `/${lang}/publications`, label: t.publications },
   { href: `/${lang}/about`, label: t.about },
   { href: `/${lang}/contact`, label: t.contact },
+  { href: `/${lang}/participate`, label: t.participate, secondary: true },
 ];
 ---
 
-<nav
-  class="flex flex-wrap justify-between items-center gap-2 mb-4 max-w-4xl w-full mx-auto"
->
-  <a href={`/${lang}/`} class={`hover:opacity-70 text-xl font-serif`}>
-    {t.home}
-  </a>
-  <div class="flex items-center gap-1">
-    <div class="flex gap-1">
+<nav class="flex flex-wrap items-center gap-1 mb-4 max-w-4xl w-full mx-auto">
+  {
+    navItems.map((item) => {
+      const colorClass = item.secondary ? "btn-secondary" : "";
+      return (
+        <a href={item.href} class={`btn btn-ghost ${colorClass}`}>
+          {item.label}
+        </a>
+      );
+    })
+  }
+  <div class="dropdown dropdown-end">
+    <label tabindex="0" class="btn btn-sm btn-circle btn-ghost">
+      <Icon path={mdiTranslate} size={16} />
+    </label>
+    <ul
+      tabindex="0"
+      class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+    >
       {
-        navItems.map((item) => {
-          const colorClass = item.secondary ? "btn-secondary" : "";
+        languages.map((langCode) => {
+          const metadata =
+            languageMetadata[langCode as keyof typeof languageMetadata];
           return (
-            <a href={item.href} class={`btn btn-ghost ${colorClass} `}>
-              {item.label}
-            </a>
+            <li>
+              <a href={metadata.url}>{metadata.name}</a>
+            </li>
           );
         })
       }
-    </div>
-    <div class="dropdown dropdown-end">
-      <label tabindex="0" class="btn btn-sm btn-circle btn-ghost">
-        <Icon path={mdiTranslate} size={16} />
-      </label>
-      <ul
-        tabindex="0"
-        class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
-      >
-        {
-          languages.map((langCode) => {
-            const metadata =
-              languageMetadata[langCode as keyof typeof languageMetadata];
-            return (
-              <li>
-                <a href={metadata.url}>{metadata.name}</a>
-              </li>
-            );
-          })
-        }
-      </ul>
-    </div>
+    </ul>
   </div>
 </nav>
