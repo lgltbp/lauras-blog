@@ -1,6 +1,5 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import Navbar from "@/components/Navbar.astro";
 import ContentBanner from "@/components/ContentBanner.astro";
 import { getTranslation, languages } from "@/i18n/translations";
 import EnResume from "@/content/resume/en.md";
@@ -27,7 +26,6 @@ const Resume = resumeMap[lang as keyof typeof resumeMap];
 ---
 
 <Layout title={t.about} lang={lang} description={t.aboutDescription}>
-  <Navbar lang={lang} />
   <ContentBanner title={t.about}>
     <div class="prose max-w-none">
       <Image

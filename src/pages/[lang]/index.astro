@@ -1,6 +1,5 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import Navbar from "@/components/Navbar.astro";
 import ContentBanner from "@/components/ContentBanner.astro";
 import { getTranslation, languages } from "@/i18n/translations";
 import { Image } from "astro:assets";
@@ -18,7 +17,6 @@ const t = getTranslation(lang);
 ---
 
 <Layout title={t.welcome} lang={lang} description={t.homeDescription}>
-  <Navbar lang={lang} />
   <ContentBanner title={t.welcome}>
     <div class="flex flex-col md:flex-row gap-6">
       <div class="flex-shrink-0 mx-auto md:mx-0">

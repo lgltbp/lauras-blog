@@ -1,14 +1,16 @@
 ---
 import "@/styles/global.css";
 import { Font } from "astro:assets";
+import Newsbar from "@/components/Newsbar.astro";
+import Navbar from "@/components/Navbar.astro";
 
 interface Props {
   title?: string;
-  lang?: string;
+  lang: string;
   description?: string;
 }
 
-const { title = "Laura's Blog", lang = "en", description } = Astro.props;
+const { title = "Laura's Blog", lang, description } = Astro.props;
 ---
 
 <!doctype html>
@@ -24,6 +26,8 @@ const { title = "Laura's Blog", lang = "en", description } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="bg-base-200 min-h-screen flex flex-col items-center">
+    <Newsbar lang={lang} />
+    <Navbar lang={lang} />
     <main class="w-full flex flex-col pb-8">
       <slot />
     </main>

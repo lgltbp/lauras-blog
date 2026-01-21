@@ -1,6 +1,5 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import Navbar from "@/components/Navbar.astro";
 import ContentBanner from "@/components/ContentBanner.astro";
 import Icon from "@/components/Icon.astro";
 import { getTranslation, languages } from "@/i18n/translations";
@@ -23,7 +22,6 @@ const t = getTranslation(lang);
 ---
 
 <Layout title={t.contact} lang={lang} description={t.contactDescription}>
-  <Navbar lang={lang} />
   <ContentBanner title={t.contact}>
     <div class="not-prose flex flex-wrap gap-2 items-center mt-8">
       <a

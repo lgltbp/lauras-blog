@@ -1,0 +1,19 @@
+---
+import { getTranslation } from "@/i18n/translations";
+
+interface Props {
+  lang: string;
+}
+
+const { lang } = Astro.props;
+const t = getTranslation(lang);
+---
+
+<div class="w-full bg-primary text-primary-content">
+  <div class="flex items-center justify-center gap-4 max-w-4xl mx-auto py-2 px-4">
+    <span>{t.newsbarText}</span>
+    <a href={`/${lang}/participate`} class="btn btn-sm btn-secondary">
+      {t.newsbarButton}
+    </a>
+  </div>
+</div>

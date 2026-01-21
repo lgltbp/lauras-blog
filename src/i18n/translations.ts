@@ -27,6 +27,8 @@ export const translations = {
     participate: "Participate!",
     participateDescription:
       "Participate in Laura Gillet's research studies on human-dog relationships. Help advance our understanding of companion animal behavior.",
+    newsbarText: "Take part in our new survey!",
+    newsbarButton: "Learn more",
   },
   fr: {
     home: "Accueil",
@@ -56,6 +58,8 @@ export const translations = {
     participate: "Participez !",
     participateDescription:
       "Participez aux études de recherche de Laura Gillet sur les relations humain-chien. Aidez à faire avancer notre compréhension du comportement des animaux de compagnie.",
+    newsbarText: "Participez à notre nouvelle étude !",
+    newsbarButton: "En savoir plus",
   },
 } as const;
 
