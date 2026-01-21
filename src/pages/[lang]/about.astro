@@ -5,6 +5,8 @@ import ContentBanner from "@/components/ContentBanner.astro";
 import { getTranslation, languages } from "@/i18n/translations";
 import EnResume from "@/content/resume/en.md";
 import FrResume from "@/content/resume/fr.md";
+import { Image } from "astro:assets";
+import cvBanner from "@/assets/layout/vertical_cv_banner.png";
 
 export function getStaticPaths() {
   return languages.map((lang) => ({
@@ -28,6 +30,11 @@ const Resume = resumeMap[lang as keyof typeof resumeMap];
   <Navbar lang={lang} />
   <ContentBanner title={t.about}>
     <div class="prose max-w-none">
+      <Image
+        src={cvBanner}
+        alt=""
+        class="block mx-auto mb-4 md:float-right md:ml-6 md:mx-0 rounded-lg w-72 h-auto"
+      />
       <Resume />
     </div>
   </ContentBanner>
