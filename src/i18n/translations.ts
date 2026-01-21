@@ -1,6 +1,6 @@
 export const translations = {
   en: {
-    home: "Laura Gillet",
+    home: "Home",
     welcome: "Welcome!",
     about: "About",
     contact: "Contact",
@@ -26,7 +26,7 @@ export const translations = {
       "Browse Laura Gillet's scientific publications on dog ownership, human-dog relationships, and the role of dogs in contemporary families.",
   },
   fr: {
-    home: "Laura Gillet",
+    home: "Accueil",
     welcome: "Bienvenue !",
     about: "À propos",
     contact: "Contact",
