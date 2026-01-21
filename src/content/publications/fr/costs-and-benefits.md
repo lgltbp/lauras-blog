@@ -1,5 +1,6 @@
 ---
 title: "Coûts et avantages perçus de la possession d'un chien de compagnie sur la base d'un échantillon de convenance de propriétaires de chiens"
+date: 2025-01-21
 coverImage: "../../../assets/content/publications/costs-and-benefits.jpg"
 citation: "Gillet, L., Turcsán, B., & Kubinyi, E. (2025). Perceived costs and benefits of companion dog keeping based on a convenience sample of dog owners. Scientific Reports, 15(1), 2515. https://doi.org/10.1038/s41598-025-85254-1"
 articleUrl: "https://www.nature.com/articles/s41598-025-85254-1"

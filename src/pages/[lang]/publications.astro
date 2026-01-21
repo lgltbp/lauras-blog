@@ -15,7 +15,7 @@ export async function getStaticPaths() {
     languages.map(async (lang) => {
       const pubs = allPublications
         .filter((pub) => pub.id.startsWith(`${lang}/`))
-        .sort((a, b) => a.data.title.localeCompare(b.data.title));
+        .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 
       const publications = await Promise.all(
         pubs.map(async (pub) => ({

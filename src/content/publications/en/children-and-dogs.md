@@ -1,5 +1,6 @@
 ---
 title: "Children and dogs: Exploring the impact of canine interaction on socio-cognitive development"
+date: 2024-10-22
 coverImage: "../../../assets/content/publications/children-and-dogs.jpg"
 citation: "Gillet, L., & Kubinyi, E. (2024). Children and dogs: Exploring the impact of canine interaction on socio-cognitive development. Gyermeknevelés Tudományos Folyóirat, 12(2), Article 2. https://doi.org/10.31074/gyntf.2024.2.45.62"
 articleUrl: "https://ojs.elte.hu/gyermekneveles/article/view/9035"

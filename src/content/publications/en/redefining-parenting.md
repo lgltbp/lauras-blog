@@ -1,5 +1,6 @@
 ---
 title: "Redefining Parenting and Family – The Child-Like Role of Dogs in Western Societies"
+date: 2025-05-22
 coverImage: "../../../assets/content/publications/redefining-parenting.jpg"
 citation: "Gillet, L., & Kubinyi, E. (2025). Redefining Parenting and Family – The Child-Like Role of Dogs in Western Societies. European Psychologist, 30(2), 96–115. https://doi.org/10.1027/1016-9040/a000552"
 articleUrl: "https://econtent.hogrefe.com/doi/10.1027/1016-9040/a000552"

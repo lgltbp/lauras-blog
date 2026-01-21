@@ -16,6 +16,7 @@ const publications = defineCollection({
   schema: ({ image }) =>
     z.object({
       title: z.string(),
+      date: z.date(),
       coverImage: image(),
       citation: z.string(),
       articleUrl: z.string().url(),
