@@ -24,41 +24,56 @@ const { surveys, lang } = Astro.props;
 const t = getTranslation(lang);
 ---
 
-<Layout title={t.participate} lang={lang} description={t.participateDescription}>
+<Layout
+  title={t.participate}
+  lang={lang}
+  description={t.participateDescription}
+>
   <ContentBanner title={t.participate}>
     <div class="flex flex-col gap-6">
       {
         surveys.map((survey) => (
           <div class="bg-base-300 shadow-lg p-3 rounded-2xl">
-            <div class="flex flex-wrap gap-4">
-              <div class="flex-shrink-0 w-32 aspect-square">
-                <Image
-                  src={survey.data.coverImage}
-                  alt=""
-                  width={256}
-                  height={256}
-                  class="w-full h-full rounded-2xl object-cover"
-                />
-              </div>
-              <div class="flex-1 min-w-48">
-                <div class="text-xl font-serif mb-2">{survey.data.title}</div>
-                <p class="mb-2">{survey.data.description}</p>
-                {survey.data.subtitle && (
-                  <p class="mb-4">{survey.data.subtitle}</p>
-                )}
-                <div class="flex flex-wrap gap-2">
-                  {survey.data.buttons.map((button) => (
-                    <a
-                      href={button.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="btn btn-primary"
-                    >
-                      {button.text}
-                    </a>
-                  ))}
+            <div class="flex flex-col text-center">
+              <div class="text-4xl font-serif mb-2">{survey.data.title}</div>
+              <p class="mb-4">{survey.data.description}</p>
+              <div class="flex justify-center mb-4">
+                <div class="w-32 aspect-square">
+                  <Image
+                    src={survey.data.coverImage}
+                    alt=""
+                    width={256}
+                    height={256}
+                    class="w-full h-full rounded-2xl object-cover"
+                  />
                 </div>
               </div>
+              {survey.data.subtitle && (
+                <p class="font-bold text-primary mb-4">{survey.data.subtitle}</p>
+              )}
+              <div class="flex flex-wrap gap-2 justify-center mb-4">
+                {survey.data.buttons.map((button) => (
+                  <a
+                    href={button.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary"
+                  >
+                    {button.text}
+                  </a>
+                ))}
+              </div>
+              {survey.data.partnerLogo && (
+                <div class="flex justify-center">
+                  <Image
+                    src={survey.data.partnerLogo}
+                    alt=""
+                    width={600}
+                    quality={100}
+                    class="max-w-full h-auto"
+                  />
+                </div>
+              )}
             </div>
           </div>
         ))
