@@ -42,7 +42,10 @@ const t = getTranslation(lang);
               </div>
               <div class="flex-1 min-w-48">
                 <div class="text-xl font-serif mb-2">{survey.data.title}</div>
-                <p class="mb-4">{survey.data.description}</p>
+                <p class="mb-2">{survey.data.description}</p>
+                {survey.data.subtitle && (
+                  <p class="mb-4">{survey.data.subtitle}</p>
+                )}
                 <div class="flex flex-wrap gap-2">
                   {survey.data.buttons.map((button) => (
                     <a
