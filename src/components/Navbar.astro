@@ -19,21 +19,18 @@ const navItems = [
   { href: `/${lang}/publications`, label: t.publications },
   { href: `/${lang}/about`, label: t.about },
   { href: `/${lang}/contact`, label: t.contact },
-  { href: `/${lang}/participate`, label: t.participate, secondary: true },
+  { href: `/${lang}/survey`, label: t.participate },
 ];
 ---
 
 <nav class="sticky top-0 z-50 w-full bg-base-200">
   <div class="flex flex-wrap items-center gap-1 max-w-4xl w-full mx-auto">
     {
-      navItems.map((item) => {
-        const colorClass = item.secondary ? "btn-secondary" : "";
-        return (
-          <a href={item.href} class={`btn btn-ghost ${colorClass}`}>
-            {item.label}
-          </a>
-        );
-      })
+      navItems.map((item) => (
+        <a href={item.href} class="btn btn-ghost">
+          {item.label}
+        </a>
+      ))
     }
     <div class="dropdown dropdown-end flex-1 flex justify-end">
       <label tabindex="0" class="btn btn-ghost">
