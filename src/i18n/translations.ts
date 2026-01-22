@@ -24,7 +24,7 @@ export const translations = {
       "Read Laura Gillet's blog posts about dog behavior, ethology research, and insights on human-canine relationships.",
     publicationsDescription:
       "Browse Laura Gillet's scientific publications on dog ownership, human-dog relationships, and the role of dogs in contemporary families.",
-    participate: "Ongoing projects",
+    participate: "Open surveys",
     participateDescription:
       "Participate in Laura Gillet's research studies on human-dog relationships. Help advance our understanding of companion animal behavior.",
     newsbarText: "Take part in our new survey!",
@@ -55,7 +55,7 @@ export const translations = {
       "Lisez les articles de blog de Laura Gillet sur le comportement canin, la recherche en éthologie et les relations humain-chien.",
     publicationsDescription:
       "Consultez les publications scientifiques de Laura Gillet sur la possession de chiens, les relations humain-chien et le rôle des chiens dans les familles contemporaines.",
-    participate: "Projets en cours",
+    participate: "Études en cours",
     participateDescription:
       "Participez aux études de recherche de Laura Gillet sur les relations humain-chien. Aidez à faire avancer notre compréhension du comportement des animaux de compagnie.",
     newsbarText: "Participez à notre nouvelle étude !",
