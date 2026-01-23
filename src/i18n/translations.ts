@@ -14,8 +14,7 @@ export const translations = {
       "In my research, I explore the relationships between humans and companion animals in modern society, particularly how pet ownership and pet care are redefining concepts of family and parenting in Western cultures.",
     homeWork:
       "I'm always happy to share about my work. Feel free to reach out if you'd like to discuss it or explore potential collaborations!",
-    homeDescription:
-      "Laura Gillet - Psychologist and PhD student in ethology.",
+    homeDescription: "Laura Gillet - Psychologist and PhD student in ethology.",
     aboutDescription:
       "Learn about Laura Gillet's background, academic journey, and research in ethology focusing on human-dog relationships and companion animal behavior.",
     contactDescription:
@@ -24,11 +23,14 @@ export const translations = {
       "Read Laura Gillet's blog posts about dog behavior, ethology research, and insights on human-canine relationships.",
     publicationsDescription:
       "Browse Laura Gillet's scientific publications on dog ownership, human-dog relationships, and the role of dogs in contemporary families.",
-    participate: "Open surveys",
+    participate: "Participate",
     participateDescription:
       "Participate in Laura Gillet's research studies on human-dog relationships. Help advance our understanding of companion animal behavior.",
     newsbarText: "Take part in our new survey!",
     newsbarButton: "Learn more",
+    researcherNote:
+      "Researchers interested in collaborating can reach out via the",
+    contactPage: "contact page",
   },
   fr: {
     home: "Accueil",
@@ -55,11 +57,14 @@ export const translations = {
       "Lisez les articles de blog de Laura Gillet sur le comportement canin, la recherche en éthologie et les relations humain-chien.",
     publicationsDescription:
       "Consultez les publications scientifiques de Laura Gillet sur la possession de chiens, les relations humain-chien et le rôle des chiens dans les familles contemporaines.",
-    participate: "Études en cours",
+    participate: "Participer",
     participateDescription:
       "Participez aux études de recherche de Laura Gillet sur les relations humain-chien. Aidez à faire avancer notre compréhension du comportement des animaux de compagnie.",
     newsbarText: "Participez à notre nouvelle étude !",
     newsbarButton: "En savoir plus",
+    researcherNote:
+      "Les chercheurs intéressés par une collaboration peuvent nous contacter via la",
+    contactPage: "page contact",
   },
 } as const;
 
