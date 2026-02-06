@@ -31,6 +31,11 @@ export const translations = {
     researcherNote:
       "Researchers interested in collaborating can reach out via the",
     contactPage: "contact page",
+    contactFormTitle: "Send a message",
+    contactName: "Name:",
+    contactEmail: "Email:",
+    contactMessage: "Your message:",
+    contactSend: "Send",
   },
   fr: {
     home: "Accueil",
@@ -65,6 +70,11 @@ export const translations = {
     researcherNote:
       "Les chercheurs intéressés par une collaboration peuvent nous contacter via la",
     contactPage: "page contact",
+    contactFormTitle: "Envoyer un message",
+    contactName: "Nom :",
+    contactEmail: "Email :",
+    contactMessage: "Votre message :",
+    contactSend: "Envoyer",
   },
 } as const;
 
