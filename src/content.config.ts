@@ -31,7 +31,7 @@ const participate = defineCollection({
       description: z.string(),
       catchphrase: z.string().optional(),
       subtitle: z.string().optional(),
-      coverImage: image(),
+      coverImage: image().optional(),
       partnerLogo: image().optional(),
       buttons: z.array(
         z.object({

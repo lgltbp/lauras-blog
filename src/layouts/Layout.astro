@@ -8,9 +8,17 @@ interface Props {
   title?: string;
   lang: string;
   description?: string;
+  showNewsbar?: boolean;
+  showNavbar?: boolean;
 }
 
-const { title = "Laura's Blog", lang, description } = Astro.props;
+const {
+  title = "Laura's Blog",
+  lang,
+  description,
+  showNewsbar = true,
+  showNavbar = true,
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -26,8 +34,8 @@ const { title = "Laura's Blog", lang, description } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="bg-base-200 min-h-screen flex flex-col items-center">
-    <Newsbar lang={lang} />
-    <Navbar lang={lang} />
+    {showNewsbar && <Newsbar lang={lang} />}
+    {showNavbar && <Navbar lang={lang} />}
     <main class="w-full flex flex-col pb-8">
       <slot />
     </main>
