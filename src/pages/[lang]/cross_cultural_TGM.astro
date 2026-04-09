@@ -59,6 +59,7 @@ const pageDescription = "Hidden page on cross-cultural TGM";
               survey.data.buttons.map((button) => (
                 <a
                   href={button.url}
+                  data-survey-btn
                   target="_blank"
                   rel="noopener noreferrer"
                   class="btn btn-soft btn-primary btn-lg"
@@ -72,4 +73,15 @@ const pageDescription = "Hidden page on cross-cultural TGM";
       </div>
     </div>
   </div>
+
+<script>
+  const id = new URLSearchParams(window.location.search).get("id");
+  if (id) {
+    document.querySelectorAll<HTMLAnchorElement>("[data-survey-btn]").forEach((btn) => {
+      const url = new URL(btn.href);
+      url.searchParams.set("id", id);
+      btn.href = url.toString();
+    });
+  }
+</script>
 </Layout>
