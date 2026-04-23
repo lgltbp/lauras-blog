@@ -7,6 +7,7 @@ export const translations = {
     blog: "Blog",
     publications: "Publications",
     readArticle: "Read the article",
+    readPost: "Click here to read",
     copyCitation: "Copy citation",
     homeIntro:
       "My name's Laura Gillet and I'm a psychologist and PhD student in ethology at Eötvös Loránd University, Budapest, Hungary.",
@@ -45,6 +46,7 @@ export const translations = {
     blog: "Blog",
     publications: "Publications",
     readArticle: "Lire l'article",
+    readPost: "Cliquez ici pour lire",
     copyCitation: "Copier la citation",
     homeIntro:
       "Je m'appelle Laura Gillet et je suis psychologue et doctorante en éthologie à l'Université Eötvös Loránd de Budapest, en Hongrie.",

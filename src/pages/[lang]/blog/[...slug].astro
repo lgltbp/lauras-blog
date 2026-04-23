@@ -23,13 +23,15 @@ const { Content } = await render(post);
 ---
 
 <Layout title={post.data.title} lang={lang} description={post.data.description}>
-  <article class="prose max-w-none bg-base-100 rounded-2xl p-4 shadow-md">
-    <header class="mb-6">
-      <h1 class="mb-2">{post.data.title}</h1>
-      <div class="text-sm opacity-50">
-        {post.data.date.toLocaleDateString(lang)}
-      </div>
-    </header>
-    <Content />
-  </article>
+  <div class="w-full bg-base-100 px-4 py-8 shadow-md">
+    <article class="prose max-w-4xl mx-auto">
+      <header class="mb-6">
+        <h1 class="mb-2">{post.data.title}</h1>
+        <div class="text-sm opacity-50">
+          {post.data.date.toLocaleDateString(lang)}
+        </div>
+      </header>
+      <Content />
+    </article>
+  </div>
 </Layout>

@@ -2,6 +2,7 @@
 import Layout from "@/layouts/Layout.astro";
 import ContentBanner from "@/components/ContentBanner.astro";
 import { getTranslation, languages } from "@/i18n/translations";
+import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
@@ -26,7 +27,7 @@ const t = getTranslation(lang);
 
 <Layout title={t.blog} lang={lang} description={t.blogDescription}>
   <ContentBanner title={t.blog}>
-    <div class="flex flex-col gap-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       {
         posts.map((post) => {
           const slug = post.id
@@ -35,12 +36,30 @@ const t = getTranslation(lang);
             .join("/")
             .replace(/\.md$/, "");
           return (
-            <a
-              href={`/${lang}/blog/${slug}`}
-              class="bg-neutral rounded-2xl p-4 no-underline shadow-md hover:shadow-lg transition-shadow"
-            >
-              <div class="text-xl font-serif">{post.data.title}</div>
-            </a>
+            <div class="bg-base-300 shadow-lg rounded-2xl overflow-hidden flex flex-col gap-3">
+              {post.data.coverImage && (
+                <Image
+                  src={post.data.coverImage}
+                  alt=""
+                  width={400}
+                  height={200}
+                  class="w-full h-40 object-cover"
+                />
+              )}
+              <div class="px-4 pb-4 flex flex-col gap-3 flex-1">
+              <div class="text-xl font-serif font-bold">{post.data.title}</div>
+              <div class="text-sm flex-1">{post.data.description}</div>
+              <div class="text-sm text-base-content/60">
+                {post.data.date.toLocaleDateString(lang)}
+              </div>
+              <a
+                href={`/${lang}/blog/${slug}`}
+                class="text-primary font-semibold hover:underline"
+              >
+                {t.readPost}
+              </a>
+              </div>
+            </div>
           );
         })
       }
