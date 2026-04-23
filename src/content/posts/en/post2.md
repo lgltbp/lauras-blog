@@ -4,7 +4,8 @@ date: 2026-04-23
 description: "Are dogs the new children? Why do people treat their dogs as babies?"
 coverImage: "../../../assets/content/blog/blog_post_2.jpg"
 ---
-*This series of posts is derived from previous interviews and public discussions that I’ve had in the past. Enjoy!*
+
+_This series of posts is derived from previous interviews and public discussions that I’ve had in the past. Enjoy!_
 
 ### **Do dogs elicit a similar emotional response in owners as babies do to parents?**
 
