@@ -15,7 +15,7 @@ More than ever, the place given to dogs in many human families is calling into q
 
 ### **What do dogs provide emotionally to their owners that other forms of companionship (like human friends or partners) might not?**
 
-What we found in another study comparing the characteristics of different relationships is that our relationship with dogs is usually less conflictual, more supportive, and generally more satisfying than relationships with other human partners. Respondents also reported having more relative power over their dogs than over other human partners, which may fulfil owners' need for control.
+What we found in another [study](https://www.nature.com/articles/s41598-025-95515-8) comparing the characteristics of different relationships is that our relationship with dogs is usually less conflictual, more supportive, and generally more satisfying than relationships with other human partners. Respondents also reported having more relative power over their dogs than over other human partners, which may fulfil owners' need for control.
 
 The high dependency of dogs on their caregivers, as well as selection for cooperative traits in them, likely contributes to this: dogs are overwhelmingly described as non-judgmental, loyal, and unconditionally affectionate.
 
