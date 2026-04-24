@@ -2,7 +2,7 @@
 title: "Q&A: Pet keeping in consumer societies"
 date: 2026-04-23
 description: "This article explores the links between pet ownership, consumption behaviour, digital activities, and animal welfare."
-coverImage: "../../../assets/content/blog/blog_post_1.jpg"
+coverImage: "../../../assets/content/blog/blog_post_1_2.jpg"
 ---
 
 _This series of posts is derived from previous interviews and public discussions that I've had in the past. Enjoy!_
@@ -11,7 +11,7 @@ _This series of posts is derived from previous interviews and public discussions
 
 It is a multifactorial phenomenon, but we argue that one contributing factor is social isolation, which is especially prevalent in individualistic, Western countries. Our main hypothesis is that a lack of fulfilling relationships with other humans leaves certain fundamental human needs unmet. In response to that, one strategy is to turn to pets, whose social and emotional functions are now highly valued. This is especially true in the case of dogs, due to their socio-cognitive skills and impressive adaptation to our communication systems.
 
-Other factors include imitation and social learning: we tend to like and do what others like and do. Of course, the increased emotional, time, and financial investment into dog ownership was made possible by the socio-economic context of Western countries, that are wealthier than in pre-industrial times.
+Other factors include imitation and social learning: we tend to like and do what others like and do. Of course, the increased emotional, time, and financial investment into dog ownership was also made possible by the socio-economic context of Western countries, that are wealthier than in pre-industrial times.
 
 ![](../../../assets/content/blog/post_1_image_2.jpg)
 
