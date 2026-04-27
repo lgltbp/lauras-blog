@@ -14,4 +14,6 @@ buttons:
     url: "https://tally.so/r/mBlWjK"
   - text: "العربية"
     url: "https://tally.so/r/eqxpjq"
+  - text: "Polski"
+    url: "https://tally.so/r/GxJjWz"
 ---
