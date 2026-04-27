@@ -3,6 +3,7 @@ import { defineConfig, fontProviders } from "astro/config";
 
 import tailwindcss from "@tailwindcss/vite";
 import { languages, defaultLanguage } from "./src/i18n/translations.ts";
+import rehypeImageCaptions from "./src/plugins/rehype-image-captions.ts";
 
 // https://astro.build/config
 export default defineConfig({
@@ -27,6 +28,9 @@ export default defineConfig({
   i18n: {
     defaultLocale: defaultLanguage,
     locales: languages,
+  },
+  markdown: {
+    rehypePlugins: [rehypeImageCaptions],
   },
   vite: {
     plugins: [tailwindcss()],

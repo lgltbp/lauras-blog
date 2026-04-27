@@ -64,6 +64,13 @@
     color: #ec786b !important;
   }
 
+  .prose figcaption {
+    text-align: right;
+    font-size: 0.75rem !important;
+    opacity: 0.5;
+    margin-top: 0.25rem !important;
+  }
+
   .font-mono {
     overflow-wrap: anywhere;
   }

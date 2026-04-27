@@ -24,7 +24,7 @@ const { Content } = await render(post);
 
 <Layout title={post.data.title} lang={lang} description={post.data.description}>
   <div class="w-full bg-base-100 px-4 py-8 shadow-md">
-    <article class="prose max-w-4xl mx-auto [&_img]:rounded-xl">
+    <article class="prose max-w-4xl mx-auto [&_img]:rounded-xl [&_figure]:my-0">
       <header class="mb-6">
         <h1 class="mb-2">{post.data.title}</h1>
         <p class="text-base opacity-70 mb-1">{post.data.description}</p>
