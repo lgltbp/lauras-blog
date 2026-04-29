@@ -29,6 +29,8 @@ Since the COVID-19 pandemic, loneliness and isolation have never been more preva
 
 Current literature suggests that how owners regard their pets depends primarily on their own circumstances and needs, rather than on the animal itself. For instance, age, gender, and family status, but also more broadly, [attitudes towards animals](https://www.tandfonline.com/doi/abs/10.2752/175303713X13636846944402), may influence the perception of the relationship. The good news is that dogs adapt easily to our expectations and to what we project onto them — in other words, they can be almost anything we want them to be, even as what we want changes over time.
 
+![](../../../assets/content/blog/post_3_image_2.jpg "© Laura Gillet")
+
 ### **Are there any cultural differences in how people integrate dogs into family life — for example, are dogs seen more as friends, children, or even partners in different regions of the world?**
 
 There is a globally emerging trend of regarding dogs as children, or at least of engaging in dog parenting practices. Yet, previous studies have mostly documented this phenomenon in societies undergoing a Second Demographic Transition and/or WEIRD societies (e.g., the US, the UK, Japan, Finland…).
