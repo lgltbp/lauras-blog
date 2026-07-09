@@ -7,7 +7,7 @@ coverImage: "../../../assets/content/participate/dogs_around_world_pic.jpg"
 partnerLogo: "../../../assets/content/participate/logo_survey_partners_background_color.png"
 buttons:
   - text: "English"
-    url: "https://tally.so/r/nPXKPb"
+    url: "https://tally.so/r/jaMYE6"
   - text: "Français"
     url: "https://tally.so/r/mOb16A"
   - text: "Suomi"
