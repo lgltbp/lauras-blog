@@ -16,4 +16,6 @@ buttons:
     url: "https://tally.so/r/eqxpjq"
   - text: "Polski"
     url: "https://tally.so/r/GxJjWz"
+  - text: "Español (México)"
+    url: "https://tally.so/r/EkrL82"
 ---
