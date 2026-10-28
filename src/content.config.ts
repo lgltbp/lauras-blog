@@ -1,4 +1,5 @@
-import { defineCollection, z } from "astro:content";
+import { defineCollection } from "astro:content";
+import { z } from "astro/zod";
 import { glob } from "astro/loaders";
 
 const posts = defineCollection({
@@ -21,7 +22,7 @@ const publications = defineCollection({
       date: z.date(),
       coverImage: image(),
       citation: z.string(),
-      articleUrl: z.string().url(),
+      articleUrl: z.url(),
     }),
 });
 
@@ -38,7 +39,7 @@ const participate = defineCollection({
       buttons: z.array(
         z.object({
           text: z.string(),
-          url: z.string().url(),
+          url: z.url(),
         }),
       ),
     }),

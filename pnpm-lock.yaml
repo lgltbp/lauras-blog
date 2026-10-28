@@ -7,6 +7,9 @@ settings:
 importers:
   .:
     dependencies:
+      "@astrojs/markdown-satteri":
+        specifier: ^0.4.5
+        version: 0.4.5
       "@mdi/js":
         specifier: ^7.4.47
         version: 7.4.47
@@ -25,15 +28,15 @@ importers:
       daisyui:
         specifier: ^5.7.50
         version: 5.7.50
+      satteri:
+        specifier: ^0.10.5
+        version: 0.10.5
       sharp:
         specifier: ^0.35.5
         version: 0.35.5(@types/node@26.6.5)
       tailwindcss:
         specifier: ^4.3.3
         version: 4.3.3
-      unist-util-visit:
-        specifier: ^5.1.0
-        version: 5.1.0
     devDependencies:
       "@astrojs/check":
         specifier: ^0.9.11
