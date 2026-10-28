@@ -2,16 +2,13 @@
   "name": "lauras-blog",
   "type": "module",
   "version": "0.0.1",
-  "packageManager": "pnpm@10.27.0",
-  "engines": {
-    "node": "24.12.0"
-  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "lint": "eslint . --fix",
-    "lint:md": "markdownlint '**/*.md' --ignore node_modules --ignore test-results",
+    "lint:md": "markdownlint \"**/*.md\" --ignore node_modules --ignore test-results",
+    "lint:sh": "shellcheck --severity=warning run_all.sh",
     "format": "prettier --write .",
     "typecheck": "astro check && tsc --noEmit",
     "test": "playwright test",
@@ -38,9 +35,13 @@
     "eslint": "^9.39.2",
     "eslint-plugin-astro": "^1.5.0",
     "globals": "^15.15.0",
+    "kill-port": "^2.0.1",
     "markdownlint-cli": "^0.47.0",
+    "npm-check-updates": "^18.1.0",
     "prettier": "^3.7.4",
     "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-sh": "^0.15.0",
+    "shellcheck": "^3.0.0",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   }

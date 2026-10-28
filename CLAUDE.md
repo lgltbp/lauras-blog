@@ -69,12 +69,15 @@ Simple, file-based internationalization without external libraries:
 
 ## Quality
 
-Always run ./run_quality.sh after any change. It does the following:
+Always run ./run_all.sh (Git Bash on Windows) after any change. It is idempotent and does the following:
 
-- install dependencies using pnpm
-- lint using eslint
-- typecheck using tsc
+- install node and pnpm if missing
+- update and install dependencies using pnpm
 - format using prettier
+- lint using shellcheck, markdownlint and eslint
+- typecheck using tsc
+- build and run playwright tests
+- leave the dev server running on port 54321
 
 ## Philosophy
 

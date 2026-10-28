@@ -26,3 +26,5 @@ pnpm-debug.log*
 test-results
 
 samples/
+# dev server logs
+dev.log
