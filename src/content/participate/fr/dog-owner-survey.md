@@ -18,4 +18,6 @@ buttons:
     url: "https://tally.so/r/GxJjWz"
   - text: "Español (México)"
     url: "https://tally.so/r/EkrL82"
+  - text: "中文"
+    url: "https://tally.so/r/perM5V"
 ---
